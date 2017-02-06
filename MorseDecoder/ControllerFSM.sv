@@ -8,7 +8,9 @@ When the input is taken if it’s a 2’b01 (dot), it goes to the left side of t
 
 When FSM moves on to the next state, it determines an output, 6-bit letter, to indicate which symbol input currently is. The reason is that when transmitting data via Morse code if you get a dot for example, it is ‘E’ unless another data is given. So, if we want to send a message of ‘P’, we need to give dot-dash-dash-dot to the FSM. However, the system does not know if we wanted to give a signal of ‘E’ until we give another input. If we give another input, only then the system moves on the the next state and waits for another input. If no input is given, it recognizes that we do not want to move further in the map and returns to the initial state.
 
+Copyright (C) 2016 M. Ali Semi YENIMOL & Berat BICER
 
+Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
 */
 
 module ControllerFSM(
