@@ -6,6 +6,9 @@
 
 For each row, there are 3 8-bit color shift registers: red, green and blue respectly, which at each clock cycle, they shift one bit of the data in serial in-parallel out format. To be able to light the 8x8 Display module, in first 24 cycles, we need to send data to the first register so that at each cycle, data can be shifted through the last register. Therefore, for the first 24 clock cycles, we send a clock signal, SH_CP,  and a 1 bit data, DS, at each cycle: shiftRed, shiftGreen, shiftBlue respectly. In the meantime, we need the store registers and output registers within color registers be offline so that we can see a full frame. Thus, in the first 24 clock cycle, clock for the store registers, ST_CP, is 1’b0 and enable signal, OE, for the output registers are 1’b1 since its an active-low signal. When the data is taken and shifted, we need to send them to store registers with a clock signal, ST_CP. For the next 24 cycles, we set SH_CP to 1’b0 since we don’t need anymore data, ST_CP to 1’b1 and OE to 1’b1 so that we delay the output until all the data is stored. When the store process is complete, we enable the output registers by setting OE signal to 1’b0. When we are done with a row, we go to the next row and repeat this process again. Finally, when all the rows are done, a frame appears on the 8x8 Display Module.
 
+Copyright (C) 2016 M. Ali Semi YENIMOL & Berat BICER
+
+Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
 */
 module DotMatrix( input logic clk,
     input logic [7:0][23:0] in_data,
