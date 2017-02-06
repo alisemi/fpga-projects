@@ -1,4 +1,17 @@
 `timescale 1ns / 1ps
+/*
+-	Determines the layout of the 8x8 Display Module with respect to the character taken as input, ”letter”.
+-	It determines the required inputs to be able to use 8x8 Display Module. It first determines which rows will be online, then defines a 24 bit data for each row(namely a message). For example, if we want to show a ‘E’ on the display module each row must be active and messages for each row are as follows:
+24’b11111111_00000000_00000000, 24'b11111111_00000000_00000000, 24'b11000000_00000000_00000000, 24'b11111111_00000000_00000000, 24'b11111111_00000000_00000000, 24'b11000000_00000000_00000000, 24'b11111111_00000000_00000000, 24'b11111111_00000000_00000000.
+After this process is complete, it stores this data and sends it to the DotMatrix module so that 8x8 Display Module becomes online. By defining the data above for each input “letter”, we choose in which color should a cell be lightened as we wish.
+
+When the outputs are taken from module DotMatrix, this data is sent back to Main module and given to the 8x8 Display Module via cables.
+
+Copyright (C) 2016 M. Ali Semi YENIMOL & Berat BICER
+
+Licensed under the TAPR Open Hardware License (www.tapr.org/OHL)
+
+*/
 
 module MatrixDriver(
     input logic clk,
