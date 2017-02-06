@@ -14,10 +14,13 @@ A simple demo can be found here: https://www.youtube.com/watch?v=n7n4a5JxDuQ
 It uses 4 modules, one for VGA control, one or Button Debouncer, one for seven segment display on Basys 3, and
 one for the top module which also has the game mechanics.
 
+Further Implementation:
+-One button instead of two button
+-Two player game, where two player shares the screen and played as Co-op
+-Random Generation of Bars instead of from ROM
 
-This is the top module for the game "Don't Hit The Bars". It has all other modules in it and has the mechanis
-like collision, motion, adjusting the score of the game.
 
+REFERENCE
 * vga.vhd and debounce.vhd modules are  taken from VGA project for Basys3 from the user Dries007
 via github. Original codes can be found on https://github.com/dries007/Basys3/tree/master/VGA which
 is licensed under The MIT License (MIT)
