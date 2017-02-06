@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Feb 04 01:26:57 2017
+# Process ID: 8548
+# Current directory: C:/Users/Ali/Desktop/project_gravity_guy_clone/project_gravity_guy_clone.runs/synth_1
+# Command line: vivado.exe -log game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game.tcl
+# Log file: C:/Users/Ali/Desktop/project_gravity_guy_clone/project_gravity_guy_clone.runs/synth_1/game.vds
+# Journal file: C:/Users/Ali/Desktop/project_gravity_guy_clone/project_gravity_guy_clone.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game.tcl -notrace

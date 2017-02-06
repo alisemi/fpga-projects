@@ -1,0 +1,108 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Sat Feb 04 01:31:08 2017
+| Host         : Ali-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file game_control_sets_placed.rpt
+| Design       : game
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    40 |
+| Unused register locations in slices containing registers |   174 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              47 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             115 |           30 |
+| Yes          | No                    | No                     |              22 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             338 |          114 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+|          Clock Signal          |           Enable Signal          |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++--------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                 | downBarXPositions[0][12]_i_2_n_0 | reset_IBUF                       |                2 |              4 |
+|  clk_IBUF_BUFG                 | indexDownBarNext[6]_i_1_n_0      | reset_IBUF                       |                3 |              7 |
+|  clk_IBUF_BUFG                 | indexUpBarNext[6]_i_1_n_0        | reset_IBUF                       |                4 |              7 |
+|  clk_IBUF_BUFG                 | currentUpEdge                    | currentUpEdge[8]_i_1_n_0         |                4 |              9 |
+|  clk_IBUF_BUFG                 | downBarXPositions[0][12]_i_2_n_0 | downBarXPositions[0][12]_i_1_n_0 |                4 |              9 |
+|  clk_IBUF_BUFG                 | upBarYPositions[0][8]_i_1_n_0    | reset_IBUF                       |                6 |              9 |
+|  clk_IBUF_BUFG                 | upBarYPositions[1]               | reset_IBUF                       |                4 |              9 |
+|  clk_IBUF_BUFG                 | upBarYPositions[2]               | reset_IBUF                       |                5 |              9 |
+|  clk_IBUF_BUFG                 | upBarYPositions[3]               | reset_IBUF                       |                6 |              9 |
+|  clk_IBUF_BUFG                 | upBarYPositions[4]               | reset_IBUF                       |                4 |              9 |
+|  clk_IBUF_BUFG                 | downBarYPositions[4]             | reset_IBUF                       |                4 |             10 |
+|  clk_IBUF_BUFG                 |                                  | curDown_cnt[9]_i_1_n_0           |                3 |             10 |
+|  clk_IBUF_BUFG                 |                                  | curUp_cnt[9]_i_1_n_0             |                3 |             10 |
+|  clk_IBUF_BUFG                 | downBarYPositions[3]             | reset_IBUF                       |                4 |             10 |
+|  clk_IBUF_BUFG                 | downBarYPositions[2]             | reset_IBUF                       |                5 |             10 |
+|  clk_IBUF_BUFG                 | downBarYPositions[1]             | reset_IBUF                       |                6 |             10 |
+|  clk_IBUF_BUFG                 | downBarYPositions[0]             | reset_IBUF                       |                5 |             10 |
+|  clk_IBUF_BUFG                 | currentDownEdge                  | currentDownEdge[10]_i_1_n_0      |                5 |             11 |
+|  clk_IBUF_BUFG                 | posY                             | reset_IBUF                       |                3 |             11 |
+|  VGA/pixel_clock/inst/clk_out1 | VGA/eqOp4_in                     | VGA/v_cntr_reg0                  |                3 |             12 |
+|  VGA/pixel_clock/inst/clk_out1 |                                  | VGA/eqOp4_in                     |                3 |             12 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | upBarXPositions[4]               |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[0][12]_i_2_n_0 | upBarXPositions[0][12]_i_1_n_0   |                4 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | downBarXPositions[1]             |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | downBarXPositions[2]             |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | downBarXPositions[3]             |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | downBarXPositions[4][12]_i_1_n_0 |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | upBarXPositions[1]               |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | upBarXPositions[2]               |                2 |             13 |
+|  clk_IBUF_BUFG                 | downBarXPositions[4]             | upBarXPositions[3]               |                3 |             13 |
+|  clk_IBUF_BUFG                 | score                            | reset_IBUF                       |                4 |             14 |
+|  VGA/pixel_clock/inst/clk_out1 |                                  |                                  |                8 |             14 |
+|  clk_IBUF_BUFG                 |                                  | clk_cnt[0]_i_1_n_0               |                5 |             19 |
+|  clk_IBUF_BUFG                 |                                  | frame_count[0]_i_1_n_0           |                5 |             20 |
+|  clk_IBUF_BUFG                 |                                  | btn_cnt[0]_i_1_n_0               |                5 |             20 |
+|  clk_IBUF_BUFG                 | DB_D/counter_out[0]_i_2__0_n_0   | DB_D/counter_set                 |                6 |             21 |
+|  clk_IBUF_BUFG                 | DB_U/sel                         | DB_U/counter_set                 |                6 |             21 |
+|  VGA/pixel_clock/inst/clk_out1 | VGA/X0_0                         |                                  |               17 |             22 |
+|  clk_IBUF_BUFG                 |                                  | score_cnt[0]_i_1_n_0             |                6 |             24 |
+|  clk_IBUF_BUFG                 |                                  |                                  |               13 |             33 |
++--------------------------------+----------------------------------+----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     1 |
+| 7      |                     2 |
+| 9      |                     7 |
+| 10     |                     7 |
+| 11     |                     2 |
+| 12     |                     2 |
+| 13     |                     9 |
+| 14     |                     2 |
+| 16+    |                     8 |
++--------+-----------------------+
+
+
