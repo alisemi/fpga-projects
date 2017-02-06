@@ -9,6 +9,8 @@ time passes, score of the user increase. When the object hits one of the bars or
 lowermost parts of the screen, game is over and a text indicating this shows up on monitor. At the same time,
 score stop to increase so that user can see their scores.
 
+A simple demo can be found here: https://www.youtube.com/watch?v=n7n4a5JxDuQ
+
 It uses 4 modules, one for VGA control, one or Button Debouncer, one for seven segment display on Basys 3, and
 one for the top module which also has the game mechanics.
 
